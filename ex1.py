@@ -108,8 +108,8 @@ def get_results(description:str,
         
     lr=decodare_in_DCT(im2, p1,p2,p3,p4) 
 
-    print(description +': psnr=',PSNR(io, im2)) # psnr=calitatea imaginii 
     print(description + ': ber=', BER(lg, lr)) # ber=rata de detectie a logo-ului
+    print(description +': psnr=',PSNR(io, im2)) # psnr=calitatea imaginii 
     plot_images(description, io, im2, lg, lr, filename_host, filename_logo)
 
 
